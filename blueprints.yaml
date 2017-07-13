@@ -8,8 +8,12 @@ author:
  url: http://hibbittsdesign.org
 
 dependencies:
-  - antimatter
+  - admin
+  - email
+  - form
   - git-sync
+  - login
+  - antimatter
 
 form:
   validation: loose
