@@ -97,6 +97,8 @@ link: http://getgrav.org/blog
 
 # Setup
 
+🚨Before setting up Git Sync, please make sure to remove the `ReadMe.md` file in your Grav site `user` folder (if one exists). This will prevent a possible sync issue when creating a default `ReadMe.md` file in your new Git repository.🚨
+
 If you want to set Antimatter with Git Sync as the default theme, you can do so by following these steps:
 
 * Navigate to `/your/site/grav/user/config`.
