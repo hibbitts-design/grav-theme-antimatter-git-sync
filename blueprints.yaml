@@ -50,8 +50,7 @@ form:
         type: input.text
         size: medium
         label: Custom Git Sync Link Text
-        default: 'Edit this Page'
-        description: Customize the View/Edit Page in Git link text.
+        description: Customize the Git Sync link text.
         validate:
             type: text
 
