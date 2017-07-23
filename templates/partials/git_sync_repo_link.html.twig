@@ -18,8 +18,14 @@
     {% if not (theme_config.type_of_git_sync_repo_link == 'edit') %}
       {% set git_sync_repo = config.plugins['git-sync'].repository %}
       {% set git_sync_repo_link = (git_sync_repo|replace({'.git':'/'})) %}
-      <a href="{{ git_sync_repo_link }}" title="View Content Repository" target="_blank">
-      <i class="fa fa-{{ git_repo_link_icon }}" aria-hidden="true"></i> View Content Repository</a>
+      {% if theme_config.custom_git_sync_repo_link_text is empty %}
+        {% set git_repo_link_text = 'View Content Repository' %}
+      {% else %}
+        {% set git_repo_link_text = theme_config.custom_git_sync_repo_link_text %}
+      {% endif %}
+      <a href="{{ git_sync_repo_link }}" title="{{ config.site.gitrepo.editlinktext }}" target="_blank">
+      <i class="fa fa-{{ git_repo_link_icon }}" aria-hidden="true"></i>
+      {{ git_repo_link_text }}</a>
     {% else %}
       {% if page.header.git_sync_repo_link %}
         {% set git_sync_repo_link = page.header.git_sync_repo_link %}
