@@ -95,6 +95,13 @@ Antimatter with Git Sync supports the ability for a page to have a `link:` heade
 link: http://getgrav.org/blog
 ```
 
+### Page Header Options
+All pages support the following additional options:
+```
+hide_git_sync_repo_link: true  # hide Git Sync link for this page
+git_sync_repo_link: https://github.com/hibbitts-design/grav-skeleton-course-hub/tree/master/pages/01.home   # to override the automatically calculated GitHub URL
+```
+
 # Setup
 
 🚨Before setting up Git Sync, please make sure to remove the `ReadMe.md` file in your Grav site `user` folder (if one exists). This will prevent a possible sync issue when creating a default `ReadMe.md` file in your new Git repository.🚨
