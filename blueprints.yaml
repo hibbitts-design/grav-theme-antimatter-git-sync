@@ -50,7 +50,7 @@ form:
         type: input.text
         size: medium
         label: Custom Git Sync Link Text
-        description: Customize the Git Sync link text.
+        description: Git Sync link text, e.g. 'View Page in GitHub'.
         validate:
             type: text
 
